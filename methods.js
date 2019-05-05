@@ -36,17 +36,17 @@ for(var method = 0; method < 100; method++)
 //=======================
 function Cancer()
 {
-		//Generates methods within Cancer
-		for(var method = 0; method < 100; method++)
+	//Generates methods within Cancer
+	for(var method = 0; method < 100; method++)
+	{
+
+		this[method] = function()
 		{
-		
-			this[method] = function()
-			{
-				var growth_InPercent = method
-				
-				return growth_InPercent;
-			};
-		}
+			var growth_InPercent = method
+
+			return growth_InPercent;
+		};
+	}
 };
 
 
@@ -58,7 +58,7 @@ function Cancer()
 function numOfGrowth()
 {
 	//Converting to type number with the "+" operator
-	var genes 		= +document.getElementById('num-of-growth').value;
+	var genes 	= +document.getElementById('num-of-growth').value;
 	var healthy 	= document.getElementById('healthy-growth');
 	var unhealthy 	= document.getElementById('unhealthy-growth');
 	
@@ -85,7 +85,7 @@ function numOfGrowth()
 		if(healthy.checked)
 		{
 			
-			healthyGenes[gene] 		= new HealthyGenes();
+			healthyGenes[gene] 	= new HealthyGenes();
 			
 		}
 		else if(unhealthy.checked)
@@ -116,7 +116,7 @@ var loadImage = function()
 {
 	var healthy 	= document.getElementById('healthy-growth');
 	var unhealthy 	= document.getElementById('unhealthy-growth');
-	var image		= document.getElementById('genetic-pic');
+	var image	= document.getElementById('genetic-pic');
 	
 	
 	if(unhealthy.checked)
