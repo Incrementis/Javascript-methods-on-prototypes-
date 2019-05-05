@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+	
+		<title>Methods on Prototypes</title>
+		<meta charset="UTF-8">
+	
+	</head>
+	
+	
+	<!--
+		NOTE:
+		===============================================================================================
+		
+		Because of simplicity & demonstration purposes, the "style" attribute is used within html tags.
+		Nevertheless it is recommended to use CSS for styling.
+		
+		In '<body>' the 'style="text-align:center;"' 
+		centers similar like the tag '<center>' which was used in previous mini-projects.
+		
+		===============================================================================================
+	-->
+	
+	
+	<body style="text-align:center;">
+	
+		<section>
+		
+			<h2>Select Type of Growth</h2>
+			
+			<img id="genetic-pic" src="#">
+			
+			<br>
+			
+			<input id="healthy-growth" type="radio" checked="checked" name="Growth" onclick="loadImage();">
+			<label for="healthy-growth" onclick="loadImage();">Healthy Growth</label>
+			
+			<br>
+			<br>
+			
+			<input id="unhealthy-growth" type="radio" name="Growth" onclick="loadImage();">
+			<label for="unhealthy-growth" onclick="loadImage();">Unhealthy Growth</label>
+			
+		</section>
+		
+		
+		<br>
+		<hr style="width:50%">
+		<br>
+	
+	
+		<section>
+		
+			<h2>Select Number of Growth</h2>
+			
+			<input id="num-of-growth" type="number" min="1" step="1" value="1">			
+			
+			<br>
+			<br>
+			
+			<button type="button" onclick="numOfGrowth();">START</button>
+			<button type="button" onclick="refresh();">REFRESH</button>
+			
+			<p style="color:magenta;">Please, open debugger tools for analysing performance and memory usage!</p>
+			
+		</section>
+		
+		
+		<br>
+		<hr style="width:50%">
+		<br>
+		
+	
+		<section>
+		
+			<br>
+			<br>
+			For more explanation please visit - 
+			<a href="https://github.com/Incrementis/Javascript-methods-on-prototypes-/wiki"> 
+			Methods on Prototypes Wiki</a>
+			
+		</section>
+		
+
+	</body>
+
+	
+	
+	<footer>
+	
+		<script language="javascript" type="text/javascript" src="methods.js"></script>
+	
+	</footer>
+	 
+
+</html>
